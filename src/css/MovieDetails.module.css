@@ -1,0 +1,20 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    margin:  5rem 128px 0 128px;
+}
+
+.movieDetails {
+    font-size: 16px;
+}
+
+.movieDetails h2 {
+    font-size: 32px;
+}
+
+@media (max-width: 720px) {
+    .detailsContainer {
+        flex-wrap: wrap;
+    }
+  }
+  

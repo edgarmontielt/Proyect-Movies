@@ -1,0 +1,49 @@
+.navbar__title {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);  
+  padding: 0 7rem;
+}
+
+.navbar__title div{
+  margin: 0;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar__routes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__enter {
+  width: 108px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c35200;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar__enter:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+.navbar__item {
+  margin-left: 69px;
+}
+
+@media (max-width: 1000px) {
+  .navbar__title {
+    justify-content: center;
+    margin: 0;
+  }
+}

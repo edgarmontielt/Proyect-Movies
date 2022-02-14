@@ -1,0 +1,11 @@
+.col {
+    max-width: 1100px
+}
+
+.movieImage {
+    border-radius: 6px;
+    width: 272px;
+    height: auto;
+    height: 399px;
+    margin-right: 2rem;
+}
