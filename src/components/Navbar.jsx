@@ -14,9 +14,11 @@ export default function Navbar() {
           <ul className={style.navbar__routes}>
             <li className={style.navbar__item}>API</li>
             <li className={style.navbar__item}>Generos</li>
-            <li className={style.navbar__item}>
-              <button className={style.navbar__enter}>Ingresar</button>
-            </li>
+            <Link to={"/movie/login"}>
+              <li className={style.navbar__item}>
+                <button className={style.navbar__enter}>Ingresar</button>
+              </li>
+            </Link>
             {/* <li className={style.navbar__item}>Buscar</li> */}
           </ul>
         </nav>

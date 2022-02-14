@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { get } from "../utils/httpClient";
+import get from "../utils/httpClient";
 import styles from "../css/MovieDetails.module.css";
 import Poster from "../components/Poster";
 

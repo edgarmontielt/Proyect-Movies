@@ -1,7 +1,7 @@
 import styles from "../css/MovieDetails.module.css";
 import MovieData from "../components/MovieData";
 
-export function MovieDetails() {
+export default function MovieDetails() {
   return (
     <div className={styles.detailsContainer}>
       <MovieData />

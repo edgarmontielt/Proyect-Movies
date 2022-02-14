@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react";
-import { get } from "../utils/httpClient";
-import { MovieCard } from "../components/MovieCard";
+import { useContext} from "react";
+import MovieCard from "../components/MovieCard";
 import style from "../css/MoviesGrid.module.css";
+import { moviesContext } from "../context/MoviesContext";
 
-export function MoviesGrid() {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    get("/discover/movie")
-    .then((data) => {
-      setMovies(data.results);
-    });
-  }, []);
-
+export default function MoviesGrid() {
+  const { movies } = useContext(moviesContext)
   return (
-    <ul className={style.moviesGrid}>
-      {movies.map((movie) => (
-        <MovieCard key={movie.id} movie={movie} />
-      ))}
-    </ul>
+    <>
+      <ul className={style.moviesGrid}>
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
+      </ul>
+    </>
   );
 }
