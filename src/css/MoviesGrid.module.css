@@ -1,11 +1,16 @@
+.moviesGrid_title {
+    text-align: center;
+}
+
 .moviesGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 272px);
     gap: 36px;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 0;
 }
+
 
 @media (max-width: 900px) {
     .moviesGrid {
