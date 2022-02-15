@@ -13,7 +13,7 @@ function MoviesContext({ children }) {
   }, []);
 
   return (
-    <moviesContext.Provider value={{ movies, setMovies }}>
+    <moviesContext.Provider value={{ movies, setMovies}}>
       {children}
     </moviesContext.Provider>
   );

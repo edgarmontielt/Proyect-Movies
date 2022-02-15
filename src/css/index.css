@@ -9,6 +9,18 @@ body {
   color: white;
 }
 
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #19242e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 62, 62);
+}
+
 a {
   text-decoration: none;
   color: white;
