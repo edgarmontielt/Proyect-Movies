@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./css/index.css";
-import App  from "./App";
+import App from "./App";
 import MoviesContext from "./context/MoviesContext";
 
 ReactDOM.render(
-  <MoviesContext>
+  <React.StrictMode>
+    <MoviesContext>
       <App />
-  </MoviesContext>,
+    </MoviesContext>
+  </React.StrictMode>,
   document.getElementById("root")
 );

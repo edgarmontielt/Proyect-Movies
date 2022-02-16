@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../css/MovieDetails.module.css";
 import Poster from "../components/Poster";
-import get from "../utils/httpClient";
+import getMovie from "../utils/httpClient";
 import { useParams } from "react-router-dom";
 import Comments from "./Comments";
 
@@ -10,7 +10,7 @@ export default function MovieData() {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    get("/movie/" + movieId).then((data) => {
+    getMovie("/movie/" + movieId).then((data) => {
       setMovie(data);
     });
   }, [movieId]);
