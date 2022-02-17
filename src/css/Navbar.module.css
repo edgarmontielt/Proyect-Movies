@@ -36,9 +36,17 @@ nav {
   opacity: 0.8;
   transform: scale(1.02);
 }
-
+.navbar__itemUser,
 .navbar__item {
-  margin-left: 69px;
+  margin-left: 40px;
+  width: 130px;
+  text-align: center;
+}
+
+.navbar__itemUser {
+  font-weight: bold;
+  font-style: italic;
+  color: #ababab;
 }
 
 @media (max-width: 1000px) {

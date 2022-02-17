@@ -3,12 +3,12 @@ import Comment from "./Comment";
 import styles from "../css/Comment.module.css"
 
 export default function Comments({ movieId }) {
+
   const [reviews, setReviews] = useState([]);
   const comentario = useRef();
 
   const add = () => {
     let comment = comentario.current.value;
-    // console.log(comment)
     setReviews([...reviews, { id: reviews.length, movieId, comment }]);
   };
 

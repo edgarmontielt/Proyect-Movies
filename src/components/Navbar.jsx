@@ -1,7 +1,10 @@
 import style from "../css/Navbar.module.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { userContext } from "../context/UserContext";
 
 export default function Navbar() {
+  const { user } = useContext(userContext);
   return (
     <>
       <header className={style.navbar}>
@@ -12,14 +15,17 @@ export default function Navbar() {
         </div>
         <nav>
           <ul className={style.navbar__routes}>
+          <li className={style.navbar__itemUser}>
+              <p>{user.logged ? "Bienvenido " + user.name : "Sin sesión"}</p>
+            </li>
             <li className={style.navbar__item}>API</li>
             <li className={style.navbar__item}>Generos</li>
-            <Link to={"/movie/login"}>
-              <li className={style.navbar__item}>
+
+            <li className={style.navbar__item}>
+              <Link to={"/login"}>
                 <button className={style.navbar__enter}>Iniciar Sesión</button>
-              </li>
-            </Link>
-            {/* <li className={style.navbar__item}>Buscar</li> */}
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

@@ -35,6 +35,31 @@ button {
   margin: 4rem 4rem;
 }
 
+.container_comment {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.user_comment {
+  color: #ababab;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container_user_pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_pic {
+  width: 5em;
+}
+
+.container_comment {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 620px) {
   .comment,
   .comment_container, 
