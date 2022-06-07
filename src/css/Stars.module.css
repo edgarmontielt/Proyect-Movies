@@ -1,0 +1,12 @@
+input[type="radio"] {
+  opacity: .1;
+}
+
+label {
+  color: grey;
+  position: relative;
+}
+
+label:hover {
+  color: gold;
+}

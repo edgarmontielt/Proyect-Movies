@@ -16,6 +16,9 @@
 .movieImage {
     border-radius: 6px;
 }
+h5, p{
+    margin: 10px;
+}
 
 @media (max-width: 620px) {
     .movieImage {

@@ -49,6 +49,10 @@ nav {
   color: #ababab;
 }
 
+.navbar__enter {
+  margin: 0;
+}
+
 @media (max-width: 1000px) {
   .navbar{ 
     display: block;
@@ -70,6 +74,9 @@ nav {
   }
   
   .navbar__item {
-    margin: 20px 0;
+    margin: 20px 0 0 0;
   }
+  .navbar__itemUser {
+    margin-left: 0px;
+}
 }

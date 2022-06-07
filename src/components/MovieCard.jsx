@@ -4,6 +4,8 @@ import style from "../css/MovieCard.module.css";
 export default function MovieCard({ movie }) {
   const imageUrl = `https://image.tmdb.org/t/p/w300${movie.poster_path}`;
 
+  console.log(movie);
+
   return (
     <li className={style.movieCard}>
       <Link to={"/movie/" + movie.id}>
@@ -14,7 +16,8 @@ export default function MovieCard({ movie }) {
           src={imageUrl}
           alt={movie.title}
         />
-        <div>{movie.title}</div>
+        <h5>{movie.title}</h5>
+        <p>{movie.vote_average}</p>
       </Link>
     </li>
   );

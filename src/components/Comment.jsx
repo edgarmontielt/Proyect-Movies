@@ -5,7 +5,7 @@ import styles from "../css/Comment.module.css";
 export default function Comment({ reviews, id }) {
   const { user } = useContext(userContext);
 
-  let valueComment = reviews.map((review) => {
+  let valueComment = reviews.map(review => {
     if (review.movieId === id) {
       return (
         <div className={styles.container_comment}>
@@ -27,7 +27,7 @@ export default function Comment({ reviews, id }) {
     }
   });
 
-  return <>{reviews == 0 ? "Sin comentarios..." : valueComment}</>;
+  return <>{reviews === 0 ? "Sin comentarios..." : valueComment}</>;
 }
 
 //Credentials : {edgarmontiel961@gmail.com -- moviesReact}

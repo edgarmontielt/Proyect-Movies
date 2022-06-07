@@ -16,7 +16,7 @@ input {
   outline: none;
   border: none;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: white;
   font-size: 18px;
 }
@@ -29,6 +29,7 @@ button {
   border-radius: 6px;
   color: white;
   font-weight: 600;
+  margin-top: 1rem;
 }
 
 .comment_single {
@@ -36,8 +37,7 @@ button {
 }
 
 .container_comment {
-  display: grid;
-  grid-template-columns: 10% 90%;
+  display: flex;
 }
 
 .user_comment {
@@ -50,6 +50,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 1rem;
 }
 
 .user_pic {

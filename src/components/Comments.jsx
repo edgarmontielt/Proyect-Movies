@@ -10,6 +10,7 @@ export default function Comments({ movieId }) {
   const add = () => {
     let comment = comentario.current.value;
     setReviews([...reviews, { id: reviews.length, movieId, comment }]);
+    
   };
 
   return (
@@ -22,6 +23,7 @@ export default function Comments({ movieId }) {
           id="details__input"
           placeholder="Escribe tu reseña..."
         ></input>
+        {/* <Stars/> */}
         <button onClick={add} id="details__button">
           Agregar review
         </button>

@@ -26,6 +26,7 @@ export default function MovieData() {
         <Poster imageUrl={imageUrl} title={movie.title} />
         <div className={`${styles.col} ${styles.movieDetails}`}>
           <h2>{movie.title}</h2>
+          <p><strong>Valoración: </strong>{movie.vote_average}</p>
           <p>⭐⭐⭐⭐⭐</p>
           <p>
             <strong>Description:</strong> {movie.overview}
